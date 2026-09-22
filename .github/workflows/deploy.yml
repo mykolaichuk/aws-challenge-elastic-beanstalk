@@ -23,6 +23,6 @@ jobs:
           application_name: cmtr-p2vf32dx-app
           environment_name: cmtr-p2vf32dx-env
           region: eu-west-1
-          version_label: ${{ github.sha }}
+          version_label: ${{ github.sha }}-${{ github.run_number }}-${{ github.run_attempt }}
           deployment_package: deploy.zip
           wait_for_deployment: true
